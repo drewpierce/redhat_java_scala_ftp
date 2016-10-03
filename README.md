@@ -18,12 +18,9 @@ rm ~/jdk-8u102-linux-x64.rpm
 -------------------------------------------------
 
 -- edit ~/.bash_profile to include:
-# Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
-
-# User specific environment and startup programs
 
 export JAVA_HOME=/usr/java/jdk1.8.0_102/
 export JRE_HOME=/usr/java/jdk1.8.0_102/jre
@@ -31,6 +28,7 @@ export JRE_HOME=/usr/java/jdk1.8.0_102/jre
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 
 export PATH
+
 -------------------------------------------------
 
 -- set the active jdk version:
@@ -56,14 +54,9 @@ sudo ln -s /usr/lib/scala-2.11.8 /usr/lib/scala
 -------------------------------------------------
 
 -- edit ~/.bash_profile to include:
-# .bash_profile
-
-# Get the aliases and functions
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc
 fi
-
-# User specific environment and startup programs
 
 export JAVA_HOME=/usr/java/jdk1.8.0_102/
 export JRE_HOME=/usr/java/jdk1.8.0_102/jre
